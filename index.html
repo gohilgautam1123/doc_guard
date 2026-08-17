@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocGuard — AI Document Forensics & Tamper Detection</title>
+  <meta name="description" content="DocGuard uses advanced image forensics algorithms to detect whether a document has been digitally altered, tampered, or photoshopped. Upload ID cards, certificates, invoices, and more." />
+  <meta property="og:title" content="DocGuard — AI Document Forensics" />
+  <meta property="og:description" content="Detect tampered, photoshopped, or doctored documents instantly using advanced forensic analysis." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background particles -->
+  <div class="bg-particles" id="bgParticles"></div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 3L33 10V18C33 26.284 26.284 33 18 33C9.716 33 3 26.284 3 18V10L18 3Z" fill="url(#shieldGrad)" />
+            <circle cx="18" cy="18" r="7" fill="none" stroke="white" stroke-width="2"/>
+            <line x1="23" y1="23" x2="28" y2="28" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="shieldGrad" x1="3" y1="3" x2="33" y2="33" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#06b6d4"/>
+                <stop offset="1" stop-color="#6366f1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Doc<span class="logo-accent">Guard</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#upload-section" id="nav-upload">Analyze</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+      </nav>
+      <a href="#upload-section" class="nav-cta" id="navCtaBtn">
+        <span>Start Analysis</span>
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      <span>AI-Powered Forensic Analysis</span>
+    </div>
+    <h1 class="hero-title">
+      Detect Document<br/>
+      <span class="gradient-text">Tampering & Forgery</span><br/>
+      In Seconds
+    </h1>
+    <p class="hero-subtitle">
+      Upload any ID card, certificate, invoice, or official document.<br/>
+      Our multi-algorithm forensics engine reveals hidden digital manipulation.
+    </p>
+    <div class="hero-actions">
+      <a href="#upload-section" class="btn-primary" id="heroAnalyzeBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Upload Document
+      </a>
+      <a href="#how-it-works" class="btn-secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        How It Works
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">6+</span>
+        <span class="stat-label">Analysis Algorithms</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Private & Local</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-label">File Formats</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW IT WORKS ====== -->
+  <section class="section" id="how-it-works">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Process</span>
+        <h2 class="section-title">How DocGuard Works</h2>
+        <p class="section-sub">Three simple steps to uncover digital manipulation in any document</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="6" width="32" height="36" rx="3" fill="url(#g1)" opacity=".2"/><rect x="8" y="6" width="32" height="36" rx="3" stroke="url(#g1)" stroke-width="2"/><line x1="15" y1="15" x2="33" y2="15" stroke="url(#g1)" stroke-width="2" stroke-linecap="round"/><line x1="15" y1="21" x2="33" y2="21" stroke="url(#g1)" stroke-width="2" stroke-linecap="round"/><line x1="15" y1="27" x2="24" y2="27" stroke="url(#g1)" stroke-width="2" stroke-linecap="round"/><path d="M26 36l6-6 6 6" stroke="url(#g1)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="g1" x1="8" y1="6" x2="40" y2="42"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg>
+          </div>
+          <h3>Upload Document</h3>
+          <p>Drag and drop or click to upload your JPG, PNG, or PDF document. Your file never leaves your browser — 100% private.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="url(#g2)" stroke-width="2"/><path d="M18 24l4 4 8-8" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="4" fill="url(#g2)" opacity=".3"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4" stroke="url(#g2)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="g2" x1="10" y1="10" x2="38" y2="38"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg>
+          </div>
+          <h3>Multi-Algorithm Scan</h3>
+          <p>Six forensic algorithms run simultaneously — ELA, noise mapping, clone detection, metadata analysis, edge sharpness, and frequency analysis.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="url(#g3)" stroke-width="2"/><rect x="6" y="10" width="36" height="28" rx="3" fill="url(#g3)" opacity=".1"/><path d="M14 28l6-6 4 4 6-8 4 4" stroke="url(#g3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="20" r="3" fill="url(#g3)" opacity=".5"/><defs><linearGradient id="g3" x1="6" y1="10" x2="42" y2="38"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg>
+          </div>
+          <h3>Forensic Report</h3>
+          <p>Get a detailed verdict with confidence scores, visual heatmaps highlighting suspicious regions, and actionable forensic findings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== UPLOAD / ANALYSIS SECTION ====== -->
+  <section class="section upload-section" id="upload-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Analysis Lab</span>
+        <h2 class="section-title">Upload Your Document</h2>
+        <p class="section-sub">Supports JPG · PNG · PDF (first page) · Max 20MB</p>
+      </div>
+
+      <!-- Upload Area -->
+      <div class="upload-area" id="uploadArea">
+        <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf" hidden />
+        <div class="upload-content" id="uploadContent">
+          <div class="upload-icon-wrap">
+            <div class="upload-icon-ring"></div>
+            <svg class="upload-icon" viewBox="0 0 64 64" fill="none">
+              <rect x="8" y="10" width="48" height="44" rx="4" stroke="url(#uploadGrad)" stroke-width="2.5"/>
+              <path d="M22 28h20M22 34h14" stroke="url(#uploadGrad)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="46" cy="46" r="12" fill="#0f172a" stroke="url(#uploadGrad)" stroke-width="2"/>
+              <path d="M46 41v10M41 46h10" stroke="url(#uploadGrad)" stroke-width="2" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="uploadGrad" x1="8" y1="10" x2="56" y2="54">
+                  <stop stop-color="#06b6d4"/><stop offset="1" stop-color="#6366f1"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3 class="upload-title">Drop your document here</h3>
+          <p class="upload-sub">or <button class="upload-link" id="browseBtn">browse from your device</button></p>
+          <div class="upload-formats">
+            <span class="fmt-badge">JPG</span>
+            <span class="fmt-badge">PNG</span>
+            <span class="fmt-badge">PDF</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview + Analysis Panel -->
+      <div class="analysis-workspace" id="analysisWorkspace" style="display:none;">
+        <!-- Document Preview Tabs -->
+        <div class="workspace-grid">
+          <div class="preview-panel">
+            <div class="panel-header">
+              <h3>Document Preview</h3>
+              <div class="view-tabs" id="viewTabs">
+                <button class="tab-btn active" data-view="original" id="tabOriginal">Original</button>
+                <button class="tab-btn" data-view="ela" id="tabEla">ELA Map</button>
+                <button class="tab-btn" data-view="noise" id="tabNoise">Noise Map</button>
+                <button class="tab-btn" data-view="heatmap" id="tabHeatmap">Heatmap</button>
+              </div>
+            </div>
+            <div class="canvas-wrap" id="canvasWrap">
+              <canvas id="mainCanvas"></canvas>
+              <canvas id="overlayCanvas" style="position:absolute;top:0;left:0;pointer-events:none;"></canvas>
+              <div class="canvas-loading" id="canvasLoading" style="display:none;">
+                <div class="scan-line"></div>
+                <div class="loading-text">
+                  <span class="loading-spinner"></span>
+                  <span id="loadingMsg">Analyzing...</span>
+                </div>
+              </div>
+            </div>
+            <div class="image-info" id="imageInfo"></div>
+          </div>
+
+          <!-- Results Panel -->
+          <div class="results-panel">
+            <div class="panel-header">
+              <h3>Forensic Analysis</h3>
+              <button class="reset-btn" id="resetBtn">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/></svg>
+                New Analysis
+              </button>
+            </div>
+            <div id="analysisProgress" class="analysis-progress">
+              <div class="progress-header">Running forensic algorithms...</div>
+              <div class="algo-list" id="algoList"></div>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" id="progressBar"></div>
+              </div>
+            </div>
+            <div id="analysisResults" style="display:none;">
+              <!-- Verdict Card -->
+              <div class="verdict-card" id="verdictCard">
+                <div class="verdict-icon" id="verdictIcon"></div>
+                <div class="verdict-body">
+                  <div class="verdict-label" id="verdictLabel"></div>
+                  <div class="verdict-title" id="verdictTitle"></div>
+                  <div class="verdict-desc" id="verdictDesc"></div>
+                </div>
+              </div>
+              <!-- Confidence Meter -->
+              <div class="confidence-section">
+                <div class="conf-header">
+                  <span>Manipulation Probability</span>
+                  <span class="conf-score" id="confScore"></span>
+                </div>
+                <div class="conf-bar-track">
+                  <div class="conf-bar-fill" id="confBarFill"></div>
+                </div>
+                <div class="conf-labels">
+                  <span>Authentic</span>
+                  <span>Suspicious</span>
+                  <span>Tampered</span>
+                </div>
+              </div>
+              <!-- Algorithm Results -->
+              <div class="algo-results" id="algoResults"></div>
+              <!-- Findings -->
+              <div class="findings-section" id="findingsSection"></div>
+              <!-- Export -->
+              <button class="export-btn" id="exportBtn">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                Export Forensic Report
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES ====== -->
+  <section class="section" id="features">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">Forensic Algorithms</h2>
+        <p class="section-sub">Six independent analysis engines working in concert to catch digital manipulation</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon feat-cyan">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 16l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Error Level Analysis (ELA)</h3>
+          <p>Detects JPEG re-compression by amplifying differences in compression ratios. Tampered regions appear as bright anomalies on the ELA map.</p>
+          <div class="feat-tags"><span>JPEG</span><span>Compression</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon feat-purple">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Noise Inconsistency</h3>
+          <p>Analyzes pixel-level noise patterns. Copy-pasted or AI-generated regions have different noise signatures than the surrounding authentic content.</p>
+          <div class="feat-tags"><span>Pixel Analysis</span><span>Statistical</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon feat-indigo">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2"/><circle cx="21" cy="21" r="6" stroke="currentColor" stroke-width="2"/><path d="M15 11h2M11 15v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Clone Region Detection</h3>
+          <p>Identifies copy-cloned regions using block-matching heuristics. Detects duplicated stamp areas, cloned signatures, and repeated textures.</p>
+          <div class="feat-tags"><span>Copy Detection</span><span>Heuristic</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon feat-teal">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 8h20M6 16h14M6 24h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="22" r="5" stroke="currentColor" stroke-width="2"/><path d="M24 20v4M22 22h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Metadata Analysis</h3>
+          <p>Reads embedded file metadata to detect software editing signatures, date anomalies, missing authentic camera data, and suspicious GPS inconsistencies.</p>
+          <div class="feat-tags"><span>EXIF</span><span>File Headers</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon feat-rose">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M4 24L12 12l6 8 4-4 6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Edge Sharpness Analysis</h3>
+          <p>Detects inconsistent blur and sharpness transitions. A genuine scan has uniform focal characteristics; pasted elements often have mismatched edges.</p>
+          <div class="feat-tags"><span>Edge Detection</span><span>Gradient</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon feat-amber">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2"/><path d="M16 6v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>DCT Frequency Artifacts</h3>
+          <p>Analyzes DCT coefficient distributions in 8×8 blocks. Edited regions often leave detectable frequency-domain footprints that differ from the original capture.</p>
+          <div class="feat-tags"><span>Frequency Domain</span><span>DCT</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DISCLAIMER ====== -->
+  <section class="section disclaimer-section">
+    <div class="disclaimer-card">
+      <div class="disclaimer-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div class="disclaimer-body">
+        <h3>Important Notice</h3>
+        <p>DocGuard provides forensic indicators based on image analysis algorithms. Results should be treated as investigative aids, not definitive legal proof. <strong>All processing happens 100% in your browser — your documents are never uploaded to any server.</strong> For legally binding document authentication, consult certified forensic examiners.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon" style="width:28px;height:28px;">
+          <svg viewBox="0 0 36 36" fill="none"><path d="M18 3L33 10V18C33 26.284 26.284 33 18 33C9.716 33 3 26.284 3 18V10L18 3Z" fill="url(#shieldGrad2)"/><circle cx="18" cy="18" r="7" fill="none" stroke="white" stroke-width="2"/><line x1="23" y1="23" x2="28" y2="28" stroke="white" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="shieldGrad2" x1="3" y1="3" x2="33" y2="33"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg>
+        </div>
+        <span class="logo-text" style="font-size:1.1rem;">Doc<span class="logo-accent">Guard</span></span>
+      </a>
+      <p class="footer-copy">© 2026 DocGuard. All processing is local. Zero data collected.</p>
+      <div class="footer-badges">
+        <span class="privacy-badge">🔒 100% Private</span>
+        <span class="privacy-badge">⚡ Client-Side Only</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Export Modal -->
+  <div class="modal-overlay" id="exportModal" style="display:none;">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h2>Forensic Report</h2>
+      <div class="report-content" id="reportContent"></div>
+      <div class="modal-actions">
+        <button class="btn-primary" id="copyReportBtn">Copy Report</button>
+        <button class="btn-secondary" id="downloadReportBtn">Download .txt</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
